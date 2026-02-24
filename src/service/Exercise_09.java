@@ -14,10 +14,17 @@ public class Exercise_09 {
 			String[] virkne1 = masivs[0].split(", ");
 			String[] virkne2 = masivs[1].split(", ");
 			
-			for (String s : virkne1) {
-				  System.out.println(s);
+			String[] rezultats = new String[virkne1.length + virkne2.length];
+			boolean satur = false;
+			for(int i=0; i<virkne1.length; i++) {
+				if(virkne1[i].equals(virkne2[i])) {
+					satur = true;
 				}
-			for (String s : virkne2) {
+				
+			}
+			
+
+			for (String s : rezultats) {
 				  System.out.println(s);
 				}
 			}
